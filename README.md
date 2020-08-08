@@ -43,9 +43,7 @@ _**Shout Out** is a social media application where you can add friends and post 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
-![WireFrame Link](https://wireframe.cc/pro/edit/364641)
+[WireFrame Link](https://wireframe.cc/pro/edit/364641)
 
 
 #### Component Tree
