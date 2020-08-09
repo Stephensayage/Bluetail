@@ -1,8 +1,8 @@
-# Shout-Out
+# Bluetail
 
 ## Overview
 
-_**Shout Out** is a social media application where you can add friends and post your thoughts! Users will have the ability to create posts and add/delete friends. 
+_**Bluetail** is a tiny home market place, where real estate agents can sign up and list their clients tiny homes. Agents will be able to create listings, and add colleagues to their listings. 
 
 
 <br>
@@ -10,19 +10,19 @@ _**Shout Out** is a social media application where you can add friends and post 
 ## MVP
 
 - _A new user can create an account and update their profile_
-- _A user can add new friends or remove old friends_
-- _A post can be made to the users own wall_
-- _Posts can be deleted or edited_
-- _Users can view any of their friends profiles, but not people they have not friended._
+- _A user can add new listings or remove old listings_
+- _An Agent can add more agents to their listing_
+- _A user can update the home information, address, and price for their listings_
+- _A homepage will show all available listings across the site_
+- _A user can save/favorite a listing_
 
 
 <br>
 
 ### Goals / Post-MVP
 
-- _A user will be able to comment on a friends post_
-- _Comments can be updated and deleted_
-- _Add a like button to comments or posts_
+- _A customer will be able to request more information from an agent_
+- _Add a seperate login for customers only_
 - _Incorporate a messaging feature_
 
 <br>
@@ -43,7 +43,7 @@ _**Shout Out** is a social media application where you can add friends and post 
 
 #### Wireframes
 
-[WireFrame Link](https://wireframe.cc/pro/edit/364641)
+[WireFrame Link](https://wireframe.cc/pro/edit/364674)
 
 
 #### Component Tree
@@ -57,15 +57,29 @@ _**Shout Out** is a social media application where you can add friends and post 
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-|__ services/
-
+|__ Screens/
+      |__ Homepage
+      |__ UserProfile
+      |__ UserEdit
+      |__ CreateListing
+      |__ EditListing
+      |__ ViewListing
+      |__ SignIn
+      |__ Register
+|__ Components/
+      |__ Shared
+            |__ Header.jsx
+            |__ Footer.jsx
+            |__ Layout.jsx
+      |__SignInForm
+            |__ Signin.jsx
+      |__ RegisterForm
+            |__ Register.jsx          
+|__ Services/
+      |__ api-helper.js
+      |__ auth.js
+      |__ Listing.js
+      |__ Save-Favorite.js
 ```
 
 #### Component Breakdown
@@ -98,7 +112,7 @@ src
 
 #### ERD Model
 
-![ERD Model Link](https://i.imgur.com/38E0J3f.png)
+![ERD Model Link](https://i.imgur.com/BcMoTR8.png)
 
 <br>
 
