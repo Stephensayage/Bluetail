@@ -45,10 +45,6 @@ _**Bluetail** is a tiny home market place, where real estate agents can sign up 
 [WireFrame Link](https://wireframe.cc/pro/edit/364674)
 
 
-#### Component Tree
-
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
-
 #### Component Hierarchy
 
 ``` structure
