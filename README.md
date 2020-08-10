@@ -55,6 +55,7 @@ src
       |__ UserProfile
       |__ SignIn
       |__ Register
+      |__ ViewListings
 |__ Components/
       |__ Shared
             |__ Header.jsx
