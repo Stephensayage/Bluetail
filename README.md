@@ -53,7 +53,6 @@ src
 |__ Screens/
       |__ Homepage
       |__ UserProfile
-      |__ ViewListing
       |__ SignIn
       |__ Register
 |__ Components/
@@ -61,6 +60,8 @@ src
             |__ Header.jsx
             |__ Footer.jsx
             |__ Layout.jsx
+      |__ ViewListing
+            |__ ViewListing.jsx
       |__SignInForm
             |__ Signin.jsx
       |__ RegisterForm
