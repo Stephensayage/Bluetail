@@ -75,8 +75,9 @@ src
 |__ Services/
       |__ api-helper.js
       |__ auth.js
-      |__ Listing.js
-      |__ Save-Favorite.js
+      |__ user.js
+      |__ listing.js
+      |__ save-favorite.js
 ```
 
 #### Component Breakdown
