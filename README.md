@@ -44,6 +44,9 @@ _**Bluetail** is a tiny home market place, where real estate agents can sign up 
 
 [WireFrame Link](https://wireframe.cc/pro/edit/364674)
 
+#### Component Tree
+
+[Whimsical Link](https://whimsical.com/YZBxuRhHwQzo6V2GEZZADT)
 
 #### Component Hierarchy
 
