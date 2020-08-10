@@ -57,9 +57,6 @@ src
 |__ Screens/
       |__ Homepage
       |__ UserProfile
-      |__ UserEdit
-      |__ CreateListing
-      |__ EditListing
       |__ ViewListing
       |__ SignIn
       |__ Register
@@ -71,7 +68,13 @@ src
       |__SignInForm
             |__ Signin.jsx
       |__ RegisterForm
-            |__ Register.jsx          
+            |__ Register.jsx   
+      |__ UserEdit
+            |__ UserEdit.jsx
+      |__ CreateListing
+            |__ CreateListing.jsx
+      |__ EditListing
+            |__ EditListing.jsx
 |__ Services/
       |__ api-helper.js
       |__ auth.js
@@ -118,12 +121,6 @@ src
 ![ERD Model Link](https://i.imgur.com/BcMoTR8.png)
 
 <br>
-
-***
-
-## Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 ***
 
