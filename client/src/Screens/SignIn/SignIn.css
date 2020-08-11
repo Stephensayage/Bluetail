@@ -1,0 +1,25 @@
+.sign-form{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 15px;
+  border: 15px solid lightblue;
+  box-shadow: 1px 1px 2px 2px  lightgray;
+  width: 30%;
+  margin: 50px auto;
+}
+
+.username-label{
+  padding: 15px;
+}
+.password-label{
+  margin-bottom: 30px;
+}
+.sign-btn{
+  margin-bottom: 50px;
+}
+
+.username-input, .password-input {
+  width: 150px;
+}
+

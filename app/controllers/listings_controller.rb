@@ -19,7 +19,7 @@ class ListingsController < ApplicationController
     @listing = Listing.new(listing_params)
 
     if @listing.save
-      render json: @listing, status: :created, location: @listing
+      render json: @listing, status: :created
     else
       render json: @listing.errors, status: :unprocessable_entity
     end
@@ -40,8 +40,8 @@ class ListingsController < ApplicationController
   end
 
   def add_agent
-    @user = User.find(params[:id])
-    @listing = Listing.find(params[:listing_id])
+    @user = User.find(params[:user_id])
+    @listing = Listing.find(params[:id])
 
     @user.listings.push(@listing)
     render json: @user, include: :listings
@@ -55,6 +55,6 @@ class ListingsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def listing_params
-      params.require(:listing).permit(:street, :city, :state, :zip, :content, :price, :square_footage, :date)
+      params.require(:listing).permit(:street, :city, :state, :zip, :content, :price, :square_footage, :date, :img_Url_1)
     end
 end

@@ -1,0 +1,33 @@
+.head-ctn{
+  background-color: lightblue;
+}
+.head-nav{
+  display: inline;
+  height: 250px;
+  width: 100%;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+}
+.title{
+  display: inline;
+  font-size: 60px;
+}
+.head-ul{
+  display: inline;
+  margin-left: 60%;
+}
+
+.head-li{
+  display: inline;
+  padding-left: 25px;
+}
+
+.footer-ctn {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:auto;
+  background: lightblue;
+}
