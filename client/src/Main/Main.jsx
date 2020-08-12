@@ -4,6 +4,7 @@ import Homepage from '../Screens/Homepage/homepage'
 
 import { readAllListings } from "../Services/listings"
 import SignIn from '../Screens/SignIn/SignIn'
+import Register from '../Screens/Register/Register'
 
 export default function Main(props) {
   const { setCurrentUser } = props
@@ -35,7 +36,12 @@ export default function Main(props) {
         />
       )} />
 
-
+      <Route path="/register" render={(props) => (
+        <Register
+          {...props}
+          setCurrentUser={setCurrentUser}
+        />
+      )} />
 
 
 

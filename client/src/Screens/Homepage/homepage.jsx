@@ -9,7 +9,7 @@ export default function Homepage(props) {
         <div className="listing-ctn">
           <img className="home-list-img" src={listing.img_Url_1} />
           <span className="list-info">{listing.street}, {listing.city}, {listing.state}, {listing.zip}</span>
-          <span>${listing.price}.00</span><button className="view-list-btn">View Listing</button>
+          <span>${listing.price}</span><button className="view-list-btn">View Listing</button>
         </div>
       ))}
     </div>

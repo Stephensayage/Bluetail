@@ -4,6 +4,7 @@ import { Link, useHistory } from 'react-router-dom'
 import { removeToken } from '../../Services/auth'
 
 export default function Header(props) {
+
   const history = useHistory()
 
   const handleLogout = () => {

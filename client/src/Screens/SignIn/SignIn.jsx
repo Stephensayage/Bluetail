@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { loginUser } from '../../Services/auth'
 
 export default function SignIn(props) {
+
+
   const [formInput, setFormInput] = useState({
     username: '',
     password: ''
@@ -23,6 +25,7 @@ export default function SignIn(props) {
     props.setCurrentUser(userData)
     props.history.push('/')
   }
+
 
   return (
     <form className="sign-form" onSubmit={handleSubmit}>
@@ -51,7 +54,7 @@ export default function SignIn(props) {
       <button className="sign-btn">Sign In</button>
 
       <div className="reg-div">
-        <span>Don't have an account?</span><Link to="/register">Sign up!</Link>
+        <span>Don't have an account? </span><Link to="/register">Sign up</Link>
       </div>
     </form>
   )
