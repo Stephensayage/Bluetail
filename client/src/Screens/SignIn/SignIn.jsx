@@ -31,8 +31,8 @@ export default function SignIn(props) {
     <form className="sign-form" onSubmit={handleSubmit}>
       <h2>Login:</h2>
       <label className="username-label">
-        Username:
-         <input
+        Username: <br />
+        <input
           className="username-input"
           name="username"
           type="text"
@@ -42,8 +42,8 @@ export default function SignIn(props) {
       </label>
 
       <label className="password-label">
-        Password:
-         <input
+        Password: <br />
+        <input
           className="password-input"
           name="password"
           value={formInput.password}

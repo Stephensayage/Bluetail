@@ -1,3 +1,4 @@
+/* Header */
 .head-ctn{
   background-color: lightblue;
 }
@@ -16,18 +17,49 @@
 }
 .head-ul{
   display: inline;
-  margin-left: 60%;
+  margin-left: 55%;
 }
-
+.logout{
+}
 .head-li{
-  display: inline;
+  display: inline-block;
   padding: 0 25px 0 25px;
 }
+.login-reg{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  color:black;
+  border: 1px solid #DADADA;
+  background: #F3F3F3;
+  padding:5px;
+  margin-left: 120px;
+  font-weight: bold;
+  font-size: 9pt;
+}
+.login-reg:active {
+  box-shadow: inset 1px 1px 1px #DFDFDF; 
+ }
+/* All buttons */
+button{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ color: #444444;
+ background: #F3F3F3;
+ border: 1px #DADADA solid;
+ padding: 5px 10px;
+ border-radius: 3px;
+ font-weight: bold;
+ font-size: 9pt;
+ outline: none;
+}
+button:active {
+ box-shadow: inset 1px 1px 1px #DFDFDF; 
+}
 
+/* Footer */
 .footer-ctn {
-  position:absolute;
+  position: absolute;
   bottom:0;
   width:100%;
-  height:auto;
+  height: 130px;
   background: lightblue;
 }

@@ -21,7 +21,7 @@ function App() {
   console.log(`This is in app ${currentUser}`)
   return (<>
     <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
-    <Main setCurrentUser={setCurrentUser} />
+    <Main currentUser={currentUser} setCurrentUser={setCurrentUser} />
     <Footer />
   </>
   );

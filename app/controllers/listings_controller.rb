@@ -11,7 +11,7 @@ class ListingsController < ApplicationController
 
   # GET /listings/1
   def show
-    render json: @listing
+    render json: @listing, include: :users
   end
 
   # POST /listings
@@ -41,10 +41,10 @@ class ListingsController < ApplicationController
 
   def add_agent
     @user = User.find(params[:user_id])
-    @listing = Listing.find(params[:id])
+    @listing = Listing.find(params[:listing_id])
 
     @user.listings.push(@listing)
-    render json: @user, include: :listings
+    render json: @listing, include: :users
   end
 
   private
