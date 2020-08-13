@@ -1,0 +1,84 @@
+.top-profile-ctn{
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px auto 25px auto;
+ justify-content: center;
+ box-shadow: 5px 5px 5px 5px lightblue;
+ padding: 25px;
+}
+.profile-img{
+  width: 300px;
+  height: 300px;
+  border: 2px solid lightblue;
+  border-radius: 50%;
+}
+.gold-star{
+  width: 15px;
+  height: 15px;
+}
+.user-info-ctn{
+  margin: 25px 0 0 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+.username{
+  font-size: 36px;
+  font-weight: 800;
+}
+.user-bio{
+  font-family: 'Open Sans', sans-serif;
+}
+/* Bottom div */
+.user-listings-ctn{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 70%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.grid-ctn{
+display: flex;
+justify-content: space-evenly;
+flex-flow: column nowrap;
+}
+.listing-title-ctn{
+  display: flex;
+  justify-content: start;  
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 15px;
+
+}
+.listing-titles{
+  display: inline;
+  width: 30%;
+  font-family: 'Roboto', sans-serif;
+}
+.active{
+  font-family: 'Roboto', sans-serif;
+}
+.profile-listing-ctn{
+  display: flex;
+  justify-content: start;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.home-list-img{
+  width: 200px;
+  height: 150px;
+  
+}
+.img-address-ctn{
+  width: 30%;
+  margin-bottom: 25px;
+}
+.profile-list-info{
+  color: rgb(59, 59, 232);
+  width: 200px;
+}
+.profile-list-price{
+  width: 30%;
+}
+.profile-list-sqft{
+  width: 30%;
+}

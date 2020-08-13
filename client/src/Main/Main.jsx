@@ -12,7 +12,6 @@ export default function Main(props) {
   const { currentUser, setCurrentUser } = props
 
   const [listings, setListings] = useState([])
-  // const [listing, setListing] = useState([])
 
   useEffect(() => {
     getListings()
@@ -23,10 +22,7 @@ export default function Main(props) {
     setListings(allListings)
   }
 
-  // const getListing = async () => {
-  //   const oneListing = await readOneListing(props.match.params.id)
-  //   setListing(oneListing)
-  // }
+
 
   return (
     <main>
@@ -62,6 +58,7 @@ export default function Main(props) {
         <UserProfile
           {...props}
           currentUser={currentUser}
+
         />
       )} />
 
