@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { loginUser } from '../../Services/auth'
 
 export default function SignIn(props) {
+
+
   const [formInput, setFormInput] = useState({
     username: '',
     password: ''
@@ -24,12 +26,13 @@ export default function SignIn(props) {
     props.history.push('/')
   }
 
+
   return (
     <form className="sign-form" onSubmit={handleSubmit}>
       <h2>Login:</h2>
       <label className="username-label">
-        Username:
-         <input
+        Username: <br />
+        <input
           className="username-input"
           name="username"
           type="text"
@@ -39,8 +42,8 @@ export default function SignIn(props) {
       </label>
 
       <label className="password-label">
-        Password:
-         <input
+        Password: <br />
+        <input
           className="password-input"
           name="password"
           value={formInput.password}
@@ -51,7 +54,7 @@ export default function SignIn(props) {
       <button className="sign-btn">Sign In</button>
 
       <div className="reg-div">
-        <span>Don't have an account?</span><Link to="/register">Sign up!</Link>
+        <span>Don't have an account? </span><Link to="/register">Sign up</Link>
       </div>
     </form>
   )

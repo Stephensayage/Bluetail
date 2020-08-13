@@ -2,13 +2,17 @@ import React, { useState, useEffect } from 'react'
 import { Route } from 'react-router-dom'
 import Homepage from '../Screens/Homepage/homepage'
 
-import { readAllListings } from "../Services/listings"
+import { readAllListings, readOneListing } from "../Services/listings"
 import SignIn from '../Screens/SignIn/SignIn'
+import Register from '../Screens/Register/Register'
+import ViewListing from '../Screens/ViewListing/ViewListing'
+import UserProfile from '../Screens/UserProfile/UserProfile'
 
 export default function Main(props) {
-  const { setCurrentUser } = props
+  const { currentUser, setCurrentUser } = props
 
   const [listings, setListings] = useState([])
+  // const [listing, setListing] = useState([])
 
   useEffect(() => {
     getListings()
@@ -18,6 +22,11 @@ export default function Main(props) {
     const allListings = await readAllListings()
     setListings(allListings)
   }
+
+  // const getListing = async () => {
+  //   const oneListing = await readOneListing(props.match.params.id)
+  //   setListing(oneListing)
+  // }
 
   return (
     <main>
@@ -35,10 +44,26 @@ export default function Main(props) {
         />
       )} />
 
+      <Route path="/register" render={(props) => (
+        <Register
+          {...props}
+          setCurrentUser={setCurrentUser}
+        />
+      )} />
 
+      <Route path="/listings/:id" render={(props) => (
+        <ViewListing
+          {...props}
 
+        />
+      )} />
 
-
+      <Route path="/users/:id" render={(props) => (
+        <UserProfile
+          {...props}
+          currentUser={currentUser}
+        />
+      )} />
 
 
 
