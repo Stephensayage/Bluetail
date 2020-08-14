@@ -47,7 +47,7 @@ export default function UserProfile(props) {
                 <img className="home-list-img" src={listing.img_Url_1} /> <br />
                 <span className="profile-list-info">{listing.street}<br /> {listing.city}, {listing.state}, {listing.zip}</span>
               </div>
-              <span className="profile-list-price">${listing.price}</span><span className="profile-list-sqft">{listing.square_footage} sqft</span><Link to={`/listings/${listing.id}`}><button className="view-list-btn">View Listing</button></Link><br />
+              <span className="profile-list-price">${listing.price}</span><span className="profile-list-sqft">{listing.square_footage} sqft</span><Link to={`/listings/${listing.id}`}><button className="view-list-btn">View Listing</button></Link>
               <Link to={`/listings/${listing.id}/edit`}><button className="view-list-btn">Edit Listing</button></Link>
             </div>
           ))}
