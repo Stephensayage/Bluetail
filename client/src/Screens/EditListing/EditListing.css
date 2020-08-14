@@ -1,0 +1,26 @@
+.edit-img-div{
+width: 25%;
+margin-left: 15%;
+}
+.edit-img-label{
+  font-family: 'Roboto', sans-serif;
+}
+
+.edit-img{
+  width: 80%;
+  height: 40px;
+  padding: 0 0 0 15px;
+}
+
+.edit-content{
+  width: 90%;
+  height: 200px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;  
+  line-height: 30px;
+  padding: 15px;
+}
+
+.address{
+  font-family: 'Open Sans', sans-serif;
+}

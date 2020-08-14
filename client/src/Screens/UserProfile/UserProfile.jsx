@@ -36,7 +36,7 @@ export default function UserProfile(props) {
       </div>
 
       <div className="user-listings-ctn">
-        <h3 className="active">Active Listings</h3>
+        <h3 className="active">Active Listings</h3><Link tp=""><button>+ Add Listing</button></Link>
         <div className="grid-ctn">
           <div className="listing-title-ctn">
             <h4 className="listing-titles">Address</h4><h4 className="listing-titles">Price</h4><h4 className="listing-titles">Square Footage</h4>
@@ -47,7 +47,8 @@ export default function UserProfile(props) {
                 <img className="home-list-img" src={listing.img_Url_1} /> <br />
                 <span className="profile-list-info">{listing.street}<br /> {listing.city}, {listing.state}, {listing.zip}</span>
               </div>
-              <span className="profile-list-price">${listing.price}</span><span className="profile-list-sqft">{listing.square_footage} sqft</span><Link to={`/listings/${listing.id}`}><button className="view-list-btn">View Listing</button></Link>
+              <span className="profile-list-price">${listing.price}</span><span className="profile-list-sqft">{listing.square_footage} sqft</span><Link to={`/listings/${listing.id}`}><button className="view-list-btn">View Listing</button></Link><br />
+              <Link to={`/listings/${listing.id}/edit`}><button className="view-list-btn">Edit Listing</button></Link>
             </div>
           ))}
         </div>
