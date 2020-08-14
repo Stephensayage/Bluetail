@@ -18,7 +18,7 @@ function App() {
     const userData = await verifyUser()
     setCurrentUser(userData)
   }
-  console.log(`This is in app ${currentUser}`)
+
   return (<>
     <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
     <Main currentUser={currentUser} setCurrentUser={setCurrentUser} />
