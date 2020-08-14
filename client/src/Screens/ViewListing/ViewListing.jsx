@@ -25,7 +25,12 @@ export default function ViewListing(props) {
         <div className="agent-ctn">
           <h3 className="agent-title">Listing Agents</h3>
           {agents.map(user =>
-            <p className="agent-name">{user.username}</p>)}
+            <>
+              <div className="agent-ctn-list">
+                <img className="agent-img-listing" src={user.imgUrl} />
+                <p className="agent-name">{user.username}</p>
+              </div>
+            </>)}
         </div>
       </div>
       <div className="bottom-div">

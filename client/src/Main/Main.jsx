@@ -7,6 +7,8 @@ import SignIn from '../Screens/SignIn/SignIn'
 import Register from '../Screens/Register/Register'
 import ViewListing from '../Screens/ViewListing/ViewListing'
 import UserProfile from '../Screens/UserProfile/UserProfile'
+import CreateListing from '../Screens/CreateListing/CreateListing'
+import EditListing from '../Screens/EditListing/EditListing'
 
 export default function Main(props) {
   const { currentUser, setCurrentUser } = props
@@ -21,8 +23,6 @@ export default function Main(props) {
     const allListings = await readAllListings()
     setListings(allListings)
   }
-
-
 
   return (
     <main>
@@ -47,10 +47,9 @@ export default function Main(props) {
         />
       )} />
 
-      <Route path="/listings/:id" render={(props) => (
+      <Route exact path="/listings/:id" render={(props) => (
         <ViewListing
           {...props}
-
         />
       )} />
 
@@ -58,11 +57,22 @@ export default function Main(props) {
         <UserProfile
           {...props}
           currentUser={currentUser}
-
         />
       )} />
 
+      <Route path="/listings/:id/create" render={(props) => (
+        <CreateListing
+          {...props}
+        />
+      )} />
 
+      <Route path="/listings/:id/edit" render={(props) => (
+        <EditListing
+          {...props}
+          listings={listings}
+          setListings={setListings}
+        />
+      )} />
 
     </main>
   )
