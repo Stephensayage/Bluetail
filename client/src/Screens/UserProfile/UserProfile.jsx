@@ -36,7 +36,7 @@ export default function UserProfile(props) {
       </div>
 
       <div className="user-listings-ctn">
-        <h3 className="active">Active Listings</h3><Link tp=""><button>+ Add Listing</button></Link>
+        <h3 className="active">Active Listings</h3><Link to={`/users/${props.match.params.id}/listing/new`}><button>+ Add Listing</button></Link>
         <div className="grid-ctn">
           <div className="listing-title-ctn">
             <h4 className="listing-titles">Address</h4><h4 className="listing-titles">Price</h4><h4 className="listing-titles">Square Footage</h4>

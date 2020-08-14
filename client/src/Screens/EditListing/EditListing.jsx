@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { readOneListing, putListing } from '../../Services/listings'
 import './EditListing.css'
+import AgentContainer from '../../Components/AgentCtn/AgentContainer'
 
 export default function EditListing(props) {
-
+  let url = props.location.pathname
   const [listing, setListing] = useState({
     street: '',
     state: '',
@@ -16,7 +17,6 @@ export default function EditListing(props) {
     img_Url_1: ''
   })
   const [agents, setAgents] = useState([])
-
   useEffect(() => {
     getListing()
   }, [])
@@ -49,11 +49,7 @@ export default function EditListing(props) {
       <form onSubmit={handleSubmit}>
         <div className="top-div">
           <img className="list-img" src={listing.img_Url_1} />
-          <div className="agent-ctn">
-            <h3 className="agent-title">Listing Agents</h3>
-            {agents.map(user =>
-              <p className="agent-name">{user.username}</p>)}
-          </div>
+          <AgentContainer agents={agents} allAgents={props.allAgents} />
         </div>
         <div className="edit-img-div">
           <label className="edit-img-label">

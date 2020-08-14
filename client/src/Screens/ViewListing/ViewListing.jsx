@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { readOneListing } from '../../Services/listings'
 import { useEffect } from 'react'
 import './ViewListing.css'
+import AgentContainer from '../../Components/AgentCtn/AgentContainer'
 
 export default function ViewListing(props) {
   const [listing, setListing] = useState([])
@@ -22,16 +23,7 @@ export default function ViewListing(props) {
     <>
       <div className="top-div">
         <img className="list-img" src={listing.img_Url_1} />
-        <div className="agent-ctn">
-          <h3 className="agent-title">Listing Agents</h3>
-          {agents.map(user =>
-            <>
-              <div className="agent-ctn-list">
-                <img className="agent-img-listing" src={user.imgUrl} />
-                <p className="agent-name">{user.username}</p>
-              </div>
-            </>)}
-        </div>
+        <AgentContainer agents={agents} />
       </div>
       <div className="bottom-div">
         <div className="content-ctn">
