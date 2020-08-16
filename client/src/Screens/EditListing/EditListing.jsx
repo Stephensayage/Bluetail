@@ -17,6 +17,7 @@ export default function EditListing(props) {
     img_Url_1: ''
   })
   const [agents, setAgents] = useState([])
+
   useEffect(() => {
     getListing()
   }, [])

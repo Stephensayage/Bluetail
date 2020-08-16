@@ -29,3 +29,8 @@ export const addAgent = async (listingId, userId) => {
   const resp = await api.put(`/listings/${listingId}/users/${userId}`)
   return resp.data;
 }
+
+export const deleteAgent = async (listingId, userId) => {
+  const resp = await api.put(`/users/${userId}/listings/${listingId}`)
+  return resp.data;
+}
