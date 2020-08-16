@@ -36,7 +36,7 @@ function AgentContainer(props) {
             {user.imgUrl ? <img className="agent-img-listing" src={user.imgUrl} /> : <img className="agent-img-listing" src="https://static.scrum.org/web/images/profile-placeholder.png" />}
             <p className="agent-name">{user.username}</p>
             <p className="agent-email">{user.email}</p>
-            <button value={user.id} className="remove-agent" onClick={handleClick}>X</button>
+            {url.includes('edit') ? (<button value={user.id} className="remove-agent" onClick={handleClick}>X</button>) : null}
           </div>
         </>)}
       {url.includes('edit') ? (
