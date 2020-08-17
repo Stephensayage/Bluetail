@@ -1,25 +1,55 @@
 /* Header */
+:root {
+	/* Base font size */
+	
+
+	/* Heading height variable*/
+	--heading-height: 20em;
+}
 .head-ctn{
-  background-color: lightblue;
+position: relative;
+width: 100%;
+height: var(--heading-height);
+}
+.head-ctn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 6em;
+    width: 100%;
+    height: calc(var(--heading-height) + 10em);
+    z-index: -1;
+    transform: skewY(-3.5deg);
+    background: 
+      linear-gradient(rgba(20, 33, 61, 0.6), rgba(20, 33, 61, 0.6)),
+      
+      linear-gradient(#14213D, #456fcb);
+    background-size: cover;
+    border-bottom: .2em solid #fff;
 }
 .head-nav{
   display: inline;
   height: 250px;
   width: 100%;
+  font-size: 16px;
 }
 .logo{
   width: 100px;
   height: 100px;
+  border-radius: 20%;
 }
 .title{
   display: inline;
   margin-left: 5px;
   font-size: 80px;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(183, 183, 183);
 }
 .head-ul{
   display: inline;
   margin-left: 45%;
+  
 }
 .logout{
 }
@@ -28,11 +58,11 @@
   padding: 0 25px 0 25px;
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
-  color: black;
+  color: rgb(183, 183, 183);
 }
 .user-click{
  text-decoration: none;
- color: black;
+ color: rgb(183, 183, 183);
 }
 .user-click:hover{
   color: yellow;
@@ -72,10 +102,55 @@ button:hover {
  }
 /* Footer */
 .footer-ctn {
-  position: absolute;
+  background: 
+  linear-gradient(rgba(20, 33, 61, 0.6), rgba(20, 33, 61, 0.6)),
+  linear-gradient(#14213D, #456fcb);
+  position: relative;
   bottom:0;
   width:100%;
   height: 130px;
-  background: lightblue;
+  color: rgb(183, 183, 183);
+  margin-top: 200px;
+}
+.list-unstyled{
+  color: rgb(183, 183, 183);
+}
+.inner-ctn{
+  width: 100%;
+  display: flex;
+ justify-content: space-between;
+}
+.row{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 85%;
+}
+.col-div{
+  margin-top: 1%;
+  width: 25%;
+  border-right: 1px solid grey;
+}
+.col-title{
+margin-top: 5%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.foot-li{
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  outline: none;
+ color: silver !important;
+}
+.icon-ctn{
+  margin: 2% auto 0 auto;
+  width: 8%;
+}
+.social-icon{
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  padding: 5px;
+}

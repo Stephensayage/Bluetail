@@ -10,6 +10,7 @@ import ViewListing from '../Screens/ViewListing/ViewListing'
 import UserProfile from '../Screens/UserProfile/UserProfile'
 import CreateListing from '../Screens/CreateListing/CreateListing'
 import EditListing from '../Screens/EditListing/EditListing'
+import EditProfile from '../Screens/EditProfile/EditProfile'
 
 export default function Main(props) {
   const { currentUser, setCurrentUser } = props
@@ -64,6 +65,17 @@ export default function Main(props) {
         <UserProfile
           {...props}
           currentUser={currentUser}
+          setAllListings={setListings}
+          allListings={listings}
+        />
+      )} />
+
+      <Route exact path="/users/:id/edit" render={(props) => (
+        <EditProfile
+          {...props}
+          currentUser={currentUser}
+          setAllAgents={setAllAgents}
+          allAgents={allAgents}
         />
       )} />
 

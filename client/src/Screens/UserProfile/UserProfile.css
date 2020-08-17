@@ -17,6 +17,11 @@
   width: 15px;
   height: 15px;
 }
+.edit-profile{
+  width: 15px;
+  height: 15px;
+  margin-left: 5%;
+}
 .user-info-ctn{
   margin: 25px 0 0 25px;
   font-family: 'Open Sans', sans-serif;
@@ -77,8 +82,23 @@ flex-flow: column nowrap;
   width: 200px;
 }
 .profile-list-price{
-  width: 35%;
+  width: 30%;
 }
 .profile-list-sqft{
+  width: 10%;
+}
+.listing-buttons{
+  display: flex;
   width: 20%;
+  flex-flow: row nowrap;
+  margin-left: 5%;
+  justify-content: space-around;
+}
+.remove-listing{
+  height: 25px;
+  margin-left: 2%;
+  color: red;
+}
+.view-listing-btn{
+  margin-right: 5%;
 }

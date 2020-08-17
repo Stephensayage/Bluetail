@@ -45,8 +45,8 @@ function AgentContainer(props) {
           SELECT AGENTS TO ADD: <br />
           <select className="select-agent" onChange={handleChange}>
             <option selected disabled>Add Agent</option>
-            {props.allAgents.map(user => (
-              <option value={user.id}>{user.username}</option>
+            {props.allAgents.map(users => (
+              <option value={users.id}>{users.username}</option>
             ))}
           </select>
           <button>Add</button>

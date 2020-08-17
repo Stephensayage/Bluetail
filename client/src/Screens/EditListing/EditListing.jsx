@@ -4,7 +4,7 @@ import './EditListing.css'
 import AgentContainer from '../../Components/AgentCtn/AgentContainer'
 
 export default function EditListing(props) {
-  let url = props.location.pathname
+
   const [listing, setListing] = useState({
     street: '',
     state: '',
