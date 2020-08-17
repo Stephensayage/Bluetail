@@ -47,6 +47,14 @@ class ListingsController < ApplicationController
     render json: @listing, include: :users
   end
 
+  def remove_agent
+    @user = User.find(params[:user_id])
+    @listing = Listing.find(params[:listing_id])
+
+    @user.listings.delete(@listing)
+    render json: @listing, include: :users
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_listing

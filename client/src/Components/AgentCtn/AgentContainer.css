@@ -1,0 +1,46 @@
+.agent-ctn{
+  width: 35%;
+  margin: 30px auto 30px auto;
+  border: 3px solid lightgray;
+  display: flex;
+  flex-flow: column nowrap;
+  height: auto;
+ }
+ .agent-title{
+   padding: 15px 0 15px 0;
+   width: 100%;
+   text-align: center;
+   margin: 0 auto;
+   border-bottom: 2px solid lightgray;
+   font-family: 'Roboto', sans-serif;
+ }
+ .agent-ctn-list{
+   width: 90%;
+   display: flex;
+   flex-flow: row nowrap;
+   margin-bottom: 15px;
+ }
+ .agent-img-listing{
+   width: 80px;
+   height: 80px;
+   margin: 5% 0 0 10%;
+   border-radius: 10%;
+ }
+ .agent-name, .agent-email{
+   width: 100%;
+   font-size: 12px;
+   padding: 15px;
+   font-family: 'Open Sans', sans-serif;
+ }
+
+.add-agent-lab{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+.remove-agent{
+  height: 25px;
+  margin-top: 6%;
+  color: red;
+}

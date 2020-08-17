@@ -21,7 +21,7 @@ export default function Register(props) {
     e.preventDefault()
     const userData = await registerUser(formInput)
     props.setCurrentUser(userData)
-    props.history.push('/')
+    props.history.push(`/users/${userData.id}/edit`)
   }
 
   return (<>

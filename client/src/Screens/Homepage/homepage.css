@@ -1,11 +1,53 @@
+.homepage-ctn{
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.carousel-ctn{
+  width: 60%;
+}
+.carousel-img{
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+.info-back{
+  background-color: rgba(155, 155, 155, 0.8);
+  border-radius: 2px;
+  color: white;
+}
+.listing-ctn{
+  width: 70%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  box-shadow: 5px 3px 5px 3px lightblue;
+  padding: 15px;
+  margin: 55px 15px 55px 15px;
+}
 .home-list-img{
   width: 300px;
   height: 200px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
 }
+.home-list-img:active {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  cursor: zoom-out;
+}
+.list-info{
+  text-align: center;
+}
+.list-head{
+  text-align: center;
 
-.listing-ctn{
-  border: 1px solid black;
-  box-shadow: 1px 1px 1px 1px lightgrey;
-  padding: 15px;
+}
+.current-listing{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
   margin: 15px;
+  padding: 15px;
 }

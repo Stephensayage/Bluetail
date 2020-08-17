@@ -8,38 +8,6 @@
   height: 40%;
   padding: 30px;
 }
-.agent-ctn{
- width: 30%;
- margin: 30px auto 30px auto;
- border: 3px solid lightgray;
-}
-.agent-title{
-  padding: 15px 0 15px 0;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  border-bottom: 2px solid lightgray;
-  font-family: 'Roboto', sans-serif;
-}
-.agent-ctn-list{
-  width: 50%;
-  margin: 0 auto;
-  
-  display: flex;
-  flex-flow: column nowrap;
-}
-.agent-img-listing{
-  width: 80px;
-  height: 80px;
-  margin-left: 30%;
-  border-radius: 10%;
-}
-.agent-name{
-  padding: 15px;
-  text-align: center;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-}
 
 /* Bottom Section */
 .bottom-div{

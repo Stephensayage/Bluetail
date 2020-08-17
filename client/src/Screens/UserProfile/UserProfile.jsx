@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { readOneUser } from '../../Services/users'
 import { Link } from "react-router-dom"
 import './UserProfile.css'
+import { deleteListing } from '../../Services/listings'
 
 export default function UserProfile(props) {
   const [getUser, setGetUser] = useState([])
@@ -18,14 +19,21 @@ export default function UserProfile(props) {
     setListings(oneUser.listings)
   }
 
-  // {listings >= 2 ? <p>Bluetail Premier Agent<img className="gold-star" src="https://i.imgur.com/DDPzUT1.png" /></p> : <p>Bluetail Agent</p>}
+  const handleClick = async (id) => {
+    await deleteListing(id)
+    props.setAllListings(props.allListings.filter(list => {
+      return list.id !== id
+    }))
+    window.location.reload()
+  }
+
   return (
     <div className="profile-ctn">
       <div className="top-profile-ctn">
         <img className="profile-img" src={getUser.imgUrl} />
         <div className="user-info-ctn">
-          <p className="username">{getUser.username}</p>
-          {listings.length >= 2 ? <p>Bluetail Premier Agent<img className="gold-star" src="https://i.imgur.com/DDPzUT1.png" /></p> : <p>Bluetail Agent</p>}
+          <p className="username">{getUser.username}<Link to={`/users/${props.match.params.id}/edit`}><img className="edit-profile" src="https://i.imgur.com/c0xry2l.png" /></Link></p>
+          {listings.length >= 3 ? <p>Bluetail Premier Agent<img className="gold-star" src="https://i.imgur.com/DDPzUT1.png" /></p> : <p>Bluetail Agent</p>}
           <p>Specialties: Buyer's Agent, Listing Agent, Relocation, Staging</p>
           <p>{getUser.email}</p>
         </div>
@@ -47,8 +55,12 @@ export default function UserProfile(props) {
                 <img className="home-list-img" src={listing.img_Url_1} /> <br />
                 <span className="profile-list-info">{listing.street}<br /> {listing.city}, {listing.state}, {listing.zip}</span>
               </div>
-              <span className="profile-list-price">${listing.price}</span><span className="profile-list-sqft">{listing.square_footage} sqft</span><Link to={`/listings/${listing.id}`}><button className="view-list-btn">View Listing</button></Link>
-              <Link to={`/listings/${listing.id}/edit`}><button className="view-list-btn">Edit Listing</button></Link>
+              <span className="profile-list-price">${listing.price}</span><span className="profile-list-sqft">{listing.square_footage} sqft</span>
+              <div className="listing-buttons">
+                <Link to={`/listings/${listing.id}`}><button className="view-listing-btn">View Listing</button></Link>
+                <Link to={`/listings/${listing.id}/edit`}><button className="view-list-btn">Edit Listing</button>
+                </Link><button onClick={() => handleClick(listing.id)} className="remove-listing">X</button>
+              </div>
             </div>
           ))}
         </div>
