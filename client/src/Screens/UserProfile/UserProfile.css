@@ -114,3 +114,54 @@ flex-flow: column nowrap;
   height: 32px;
   margin-bottom: 5%;
 }
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .top-profile-ctn{
+   width: 80%;
+   flex-flow: column wrap;
+  }
+  .profile-img{
+    width: 50%;
+    height: 60%;
+    margin: 0 auto;
+  }
+  .user-info-ctn{
+    margin: 15px auto;
+    font-size: 12px;
+  }
+  .user-bio{
+    font-size: 12px;
+  }
+
+  .user-listings-ctn{
+    width: 85%;
+  }
+  .img-address-ctn{
+    width: 40%;
+  }
+  .home-list-img{
+    width: 90%;
+    height: 50%;
+  }
+  .listing-titles{
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  .listing-buttons{
+  display: flex;
+  flex-flow: column nowrap;  
+  }
+  .view-listing-btn{
+    margin-right: 5%;
+    font-size: 8px !important;
+  }
+  .view-list-btn{
+    margin-right: 5%;
+    font-size: 8px !important;
+  }
+  .remove-listing{
+    font-size: 8px;
+    width: 30px;
+  }
+  }

@@ -28,7 +28,7 @@ export default function Header(props) {
           props.currentUser ? (
             <>
               <Link to="/"><li className="head-li home">Home</li></Link>
-              <li className="head-li"> Welcome, <Link className="user-click" to={`/users/${props.currentUser.id}`}>{props.currentUser.username}</Link><button className="logout button" onClick={handleLogout}>Logout</button></li>
+              <li className="head-li welcome"> Welcome, <Link className="user-click" to={`/users/${props.currentUser.id}`}>{props.currentUser.username}</Link><button className="logout button" onClick={handleLogout}>Logout</button></li>
 
 
             </>

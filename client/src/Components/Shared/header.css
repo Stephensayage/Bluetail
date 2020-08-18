@@ -208,4 +208,17 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 5%;
     width: 28%;
   }
+ .logout{
+   position: absolute;
+   top: 170px;
+   right: 320px;
+ }
+ .head-ul{
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  padding-left: 0px; 
+}
+ .welcome{
+  
+ }
 }

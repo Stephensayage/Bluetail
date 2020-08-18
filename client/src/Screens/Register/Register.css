@@ -49,3 +49,35 @@ font-weight: 800;
 .reg-input{
   width: 200px;
 }
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .tiny-img{
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  .reg-slogan{
+    font-size: medium;
+    font-weight: 800;
+     width: 85%;
+     height: 50px;
+     margin: -80px auto 0 auto;
+     padding-top: 15px;
+    }
+  .reg-form{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 15px;
+    border: 15px solid lightblue;
+    box-shadow: 1px 1px 2px 2px  lightgray;
+    width: 80%;
+    margin: 50px auto 150px auto;
+    }
+    .reg-btn{
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+  }

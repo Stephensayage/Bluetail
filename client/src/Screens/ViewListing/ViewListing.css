@@ -43,3 +43,25 @@
   margin-left: 25px;
   font-size: large;
 }
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .top-div{
+    width: 100%;
+    flex-flow: column nowrap;
+  }
+  .list-img{
+    width: 95%;
+  }
+  .content{
+    font-size: 18px;
+  }
+  .info-ctn{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin: 25px 5px 5px 5px ;
+   padding: 5px;
+   box-shadow: 5px 5px 5px 5px rgb(117, 131, 159);
+  }
+}

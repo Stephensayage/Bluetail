@@ -50,3 +50,17 @@
   margin-top: 6%;
   color: red;
 }
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .agent-ctn{
+    width: 75%;
+   }
+  .agent-email{
+     display: none;
+   }
+  .agent-name{
+    margin-left: 30%;
+  }
+
+  }
