@@ -5,6 +5,8 @@
   display: flex;
   flex-flow: column nowrap;
   height: auto;
+  box-shadow: 5px 5px 5px 5px rgb(117, 131, 159);
+  background-color: white;
  }
  .agent-title{
    padding: 15px 0 15px 0;
@@ -21,17 +23,21 @@
    margin-bottom: 15px;
  }
  .agent-img-listing{
-   width: 80px;
-   height: 80px;
+   width: 100px;
+   height: 100px;
    margin: 5% 0 0 10%;
    border-radius: 10%;
  }
  .agent-name, .agent-email{
    width: 100%;
-   font-size: 12px;
+   font-size: 14px;
    padding: 15px;
+   margin-top: 10%;
    font-family: 'Open Sans', sans-serif;
  }
+.agent-name-link{
+  margin-top: 5%;
+}
 
 .add-agent-lab{
   margin: 0 auto;
@@ -44,3 +50,17 @@
   margin-top: 6%;
   color: red;
 }
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .agent-ctn{
+    width: 75%;
+   }
+  .agent-email{
+     display: none;
+   }
+  .agent-name{
+    margin-left: 30%;
+  }
+
+  }

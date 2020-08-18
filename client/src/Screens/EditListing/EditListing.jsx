@@ -145,7 +145,7 @@ export default function EditListing(props) {
             </div>
           </div>
         </div>
-        <button>Submit Changes</button>
+        <button className="button">Submit Changes</button>
       </form>
     </>
   )

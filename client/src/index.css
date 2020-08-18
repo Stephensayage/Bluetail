@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   min-height: auto;
-  
+  background-color: #E5E5E5 !important;
 }
 .root{
   padding-bottom: 2.5rem;

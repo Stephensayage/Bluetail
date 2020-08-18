@@ -151,7 +151,7 @@ export default function CreateListing(props) {
             </div>
           </div>
         </div>
-        <button>Create Listing</button>
+        <button className="button">Create Listing</button>
       </form>
     </>
   )

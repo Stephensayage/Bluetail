@@ -34,25 +34,34 @@ height: var(--heading-height);
   width: 100%;
   font-size: 16px;
 }
+.logo-div{
+  display: flex;
+  margin-top: 10px;
+}
 .logo{
   width: 100px;
   height: 100px;
-  border-radius: 20%;
+ margin-top: 15%;
 }
 .title{
+  padding-top: 10px;
   display: inline;
   margin-left: 5px;
   font-size: 80px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Playfair Display SC', serif;
   color: rgb(183, 183, 183);
 }
 .head-ul{
-  display: inline;
-  margin-left: 45%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   
+  width: 100%;
 }
 .logout{
+  margin-left: 15px;
 }
+
 .head-li{
   display: inline-block;
   padding: 0 25px 0 25px;
@@ -65,7 +74,7 @@ height: var(--heading-height);
  color: rgb(183, 183, 183);
 }
 .user-click:hover{
-  color: yellow;
+  color: #fca311;
 }
 .login-reg{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -82,7 +91,7 @@ height: var(--heading-height);
   box-shadow: inset 1px 1px 1px #DFDFDF; 
  }
 /* All buttons */
-button{
+.button{
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  color: #444444;
  background: #F3F3F3;
@@ -90,13 +99,13 @@ button{
  padding: 5px 10px;
  border-radius: 3px;
  font-weight: bold;
- font-size: 9pt;
+ font-size: 10pt !important;
  outline: none;
 }
-button:active {
+.button:active {
  box-shadow: inset 1px 1px 1px #DFDFDF; 
 }
-button:hover {
+.button:hover {
   box-shadow: inset 1px 1px 1px #DFDFDF; 
   cursor: pointer;
  }
@@ -153,4 +162,63 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 25px;
   margin: 5px;
   padding: 5px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .head-ctn{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    height: 300px;
+  }
+  .title{
+    font-size: 50px;
+    margin-left: 10%;
+  }
+  .logo-div{
+   width: 100%;
+  }
+  .logo{
+    width: 100px;
+    height: 100px;
+   margin-top: 25%;
+   margin-left: 33%;
+  }
+  .login-reg{
+    margin-right: 15%;
+  }
+
+  /* Footer */
+  .footer-ctn {
+    height: 150px;
+    margin-top: 100px;
+  }
+  .row{
+    margin-top: 5%;
+    width: 60%;
+  }
+  .col-div{
+    width: 35%;
+  }
+  .col-title{
+    display: none;
+  }
+  .icon-ctn{
+    margin-top: 5%;
+    width: 28%;
+  }
+ .logout{
+   position: absolute;
+   top: 170px;
+   right: 320px;
+ }
+ .head-ul{
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  padding-left: 0px; 
+}
+ .welcome{
+  
+ }
 }

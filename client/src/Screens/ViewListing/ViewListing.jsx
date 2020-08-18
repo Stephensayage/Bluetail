@@ -3,6 +3,7 @@ import { readOneListing } from '../../Services/listings'
 import { useEffect } from 'react'
 import './ViewListing.css'
 import AgentContainer from '../../Components/AgentCtn/AgentContainer'
+import { Card, Button } from "react-bootstrap"
 
 export default function ViewListing(props) {
   const [listing, setListing] = useState([])
@@ -54,3 +55,18 @@ export default function ViewListing(props) {
     </>
   )
 }
+{/* <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={listing.img_Url_1} />
+  <Card.Body>
+    <Card.Title>${listing.price}</Card.Title>
+    <Card.Text>
+    <div className="info">
+            Address:
+            <p>{listing.street}, {listing.city}, {listing.state}, {listing.zip}</p>
+      </div>
+      <br/>
+      {listing.content}
+    </Card.Text>
+    <Button variant="primary">View Listing</Button>
+  </Card.Body>
+</Card> */}

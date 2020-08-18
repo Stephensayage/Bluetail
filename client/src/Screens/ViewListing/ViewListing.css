@@ -19,7 +19,8 @@
   font-size: 36px;  
   padding: 15px;
   margin: 5px;
-  box-shadow: 1px 1px 1px 1px lightgrey;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px rgb(117, 131, 159);
 }
 .content{
   font-family: 'Open Sans', sans-serif;
@@ -31,14 +32,36 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  
-  margin: 5px;
+  background-color: white;
+  margin: 25px 5px 5px 5px ;
  padding: 5px;
-  box-shadow: 1px 1px 1px 1px lightgrey;
+ box-shadow: 5px 5px 5px 5px rgb(117, 131, 159);
 }
 .info{
   font-family: 'Roboto', sans-serif;  
   padding: 15px;
   margin-left: 25px;
   font-size: large;
+}
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .top-div{
+    width: 100%;
+    flex-flow: column nowrap;
+  }
+  .list-img{
+    width: 95%;
+  }
+  .content{
+    font-size: 18px;
+  }
+  .info-ctn{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin: 25px 5px 5px 5px ;
+   padding: 5px;
+   box-shadow: 5px 5px 5px 5px rgb(117, 131, 159);
+  }
 }

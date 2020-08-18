@@ -13,7 +13,7 @@ import EditListing from '../Screens/EditListing/EditListing'
 import EditProfile from '../Screens/EditProfile/EditProfile'
 
 export default function Main(props) {
-  const { currentUser, setCurrentUser } = props
+  const { currentUser, setCurrentUser, currentId } = props
 
   const [listings, setListings] = useState([])
   const [allAgents, setAllAgents] = useState([])
@@ -65,6 +65,7 @@ export default function Main(props) {
         <UserProfile
           {...props}
           currentUser={currentUser}
+          currentId={currentId}
           setAllListings={setListings}
           allListings={listings}
         />

@@ -9,8 +9,10 @@ export default function UserProfile(props) {
   const [getUser, setGetUser] = useState([])
   const [listings, setListings] = useState([])
 
+
   useEffect(() => {
     findUser()
+
   }, [])
 
   const findUser = async () => {
@@ -19,6 +21,7 @@ export default function UserProfile(props) {
     setListings(oneUser.listings)
   }
 
+
   const handleClick = async (id) => {
     await deleteListing(id)
     props.setAllListings(props.allListings.filter(list => {
@@ -26,6 +29,7 @@ export default function UserProfile(props) {
     }))
     window.location.reload()
   }
+
 
   return (
     <div className="profile-ctn">
@@ -44,7 +48,7 @@ export default function UserProfile(props) {
       </div>
 
       <div className="user-listings-ctn">
-        <h3 className="active">Active Listings</h3><Link to={`/users/${props.match.params.id}/listing/new`}><button>+ Add Listing</button></Link>
+        <h3 className="active">Active Listings</h3><Link className="add-list-link" to={`/users/${props.match.params.id}/listing/new`}><button className="add-list button">+ Add Listing</button></Link>
         <div className="grid-ctn">
           <div className="listing-title-ctn">
             <h4 className="listing-titles">Address</h4><h4 className="listing-titles">Price</h4><h4 className="listing-titles">Square Footage</h4>
@@ -57,9 +61,9 @@ export default function UserProfile(props) {
               </div>
               <span className="profile-list-price">${listing.price}</span><span className="profile-list-sqft">{listing.square_footage} sqft</span>
               <div className="listing-buttons">
-                <Link to={`/listings/${listing.id}`}><button className="view-listing-btn">View Listing</button></Link>
-                <Link to={`/listings/${listing.id}/edit`}><button className="view-list-btn">Edit Listing</button>
-                </Link><button onClick={() => handleClick(listing.id)} className="remove-listing">X</button>
+                <Link to={`/listings/${listing.id}`}><button className="view-listing-btn button">View Listing</button></Link>
+                <Link to={`/listings/${listing.id}/edit`}><button className="view-list-btn button">Edit Listing</button>
+                </Link><button onClick={() => handleClick(listing.id)} className="remove-listing button">X</button>
               </div>
             </div>
           ))}
