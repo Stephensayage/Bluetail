@@ -4,13 +4,14 @@
   flex-flow: row wrap;
   margin: 50px auto 25px auto;
  justify-content: center;
- box-shadow: 5px 5px 5px 5px lightblue;
+ box-shadow: 5px 5px 5px 5px rgb(117, 131, 159);
+ background-color: white;
  padding: 25px;
 }
 .profile-img{
   width: 300px;
   height: 300px;
-  border: 2px solid lightblue;
+  border: 2px solid rgba(33, 53, 93, 0.8);
   border-radius: 50%;
 }
 .gold-star{
@@ -37,9 +38,12 @@
 .user-listings-ctn{
   display: flex;
   flex-flow: column nowrap;
-  width: 70%;
+  width: 75%;
   justify-content: space-between;
   margin: 0 auto;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 5px 5px 5px 5px rgb(117, 131, 159);
 }
 .grid-ctn{
 display: flex;
@@ -49,7 +53,7 @@ flex-flow: column nowrap;
 .listing-title-ctn{
   display: flex;
   justify-content: start;  
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid rgb(33, 53, 93);
   margin-bottom: 15px;
 
 }
@@ -58,13 +62,16 @@ flex-flow: column nowrap;
   width: 30%;
   font-family: 'Roboto', sans-serif;
 }
+.add-list{
+  margin-bottom: 15px;
+}
 .active{
   font-family: 'Roboto', sans-serif;
 }
 .profile-listing-ctn{
   display: flex;
   justify-content: start;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid rgb(33, 53, 93);
   margin-bottom: 10px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -101,4 +108,9 @@ flex-flow: column nowrap;
 }
 .view-listing-btn{
   margin-right: 5%;
+}
+.add-list-link{
+  width: 115px;
+  height: 32px;
+  margin-bottom: 5%;
 }

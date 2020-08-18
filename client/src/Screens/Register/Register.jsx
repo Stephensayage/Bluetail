@@ -62,7 +62,7 @@ export default function Register(props) {
           onChange={handleChange}
         />
       </label>
-      <button className="reg-btn">Sign Up</button>
+      <button className="reg-btn button">Sign Up</button>
     </form>
 
 

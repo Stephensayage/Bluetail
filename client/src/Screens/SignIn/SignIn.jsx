@@ -51,7 +51,7 @@ export default function SignIn(props) {
           onChange={handleChange}
         />
       </label>
-      <button className="sign-btn">Sign In</button>
+      <button className="sign-btn button">Sign In</button>
 
       <div className="reg-div">
         <span>Don't have an account? </span><Link to="/register">Sign up</Link>

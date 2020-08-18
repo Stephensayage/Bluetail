@@ -1,9 +1,18 @@
 import React from 'react'
 import "./homepage.css"
 import { Link } from 'react-router-dom'
-import { Carousel } from "react-bootstrap"
+import { Carousel, Pagination } from "react-bootstrap"
 
 export default function Homepage(props) {
+  let active = 1;
+  let items = [];
+  for (let number = 1; number <= 5; number++) {
+    items.push(
+      <Pagination.Item key={number} active={number === active}>
+        {number}
+      </Pagination.Item >,
+    );
+  }
 
   return (
     <div className="homepage-ctn">
@@ -55,15 +64,13 @@ export default function Homepage(props) {
         <div className="listing-ctn">
           <img className="home-list-img" src={listing.img_Url_1} />
           <span className="list-info"><p className="list-head">Address</p> <br />{listing.street}, {listing.city}, {listing.state}, {listing.zip}</span>
-          <span><p className="list-head">Price</p><br />${listing.price}</span><Link to={`/listings/${listing.id}`}><button className="view-list-btn">View Listing</button></Link>
+          <span><p className="list-head">Price</p><br />${listing.price}</span><Link to={`/listings/${listing.id}`}><button className="view-list-btn button">View Listing</button></Link>
         </div>
       ))}
+      <div>
+        <Pagination>{items}</Pagination>
+
+      </div>
     </div>
   )
 }
-
-{/* <div className="homepage-ctn">
-      <div className="home-img-ctn">
-        <img className="home-img" src="https://www.tinyheirloom.com/wp-content/uploads/2018/10/breeze_exterior.jpg" />
-        <i className="img-text">Home is where you park it</i>
-      </div> */}

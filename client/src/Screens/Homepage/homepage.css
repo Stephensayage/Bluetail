@@ -22,27 +22,31 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  box-shadow: 5px 3px 5px 3px lightblue;
+  box-shadow: 3px 3px 3px 3px rgb(117, 131, 159);
   padding: 15px;
   margin: 55px 15px 55px 15px;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgba(33, 53, 93, 0.8);
 }
 .home-list-img{
   width: 300px;
   height: 200px;
-  transition: transform 0.25s ease;
+  transition: transform 1.0s ease;
   cursor: zoom-in;
 }
-.home-list-img:active {
+.home-list-img:hover {
   -webkit-transform: scale(2);
   transform: scale(2);
   cursor: zoom-out;
 }
 .list-info{
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+
 }
 .list-head{
   text-align: center;
-
+  font-family: 'Roboto', sans-serif;
 }
 .current-listing{
   font-family: 'Roboto', sans-serif;

@@ -85,7 +85,7 @@ export default function EditProfile(props) {
               className="edit-user-bio"
               value={getUser.bio}
             />
-            <button>Submit</button>
+            <button className="button">Submit</button>
           </div>
         </div>
       </div>
