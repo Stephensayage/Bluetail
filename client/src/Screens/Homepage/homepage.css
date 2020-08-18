@@ -68,3 +68,20 @@
 .content-ctn{
 
 }
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .info-back{
+    display: none;
+  }
+  .carousel-ctn{
+    width: 90%;
+  }
+  .listing-ctn{
+  width: 90%;
+  flex-flow: column wrap;
+  }
+  .card{
+    margin: 0 auto;
+  }
+}

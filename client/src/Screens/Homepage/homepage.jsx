@@ -64,7 +64,7 @@ export default function Homepage(props) {
 
         {props.listings.map(listing => (<>
           <div className="listing-ctn">
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem' }} className="card">
               <Card.Img variant="top" className="home-list-img" src={listing.img_Url_1} />
               <Card.Body>
                 <Card.Title>${listing.price}</Card.Title>

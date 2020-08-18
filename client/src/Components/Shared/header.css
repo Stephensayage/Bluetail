@@ -41,14 +41,14 @@ height: var(--heading-height);
 .logo{
   width: 100px;
   height: 100px;
-  border-radius: 20%;
+ margin-top: 15%;
 }
 .title{
   padding-top: 10px;
   display: inline;
   margin-left: 5px;
   font-size: 80px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Playfair Display SC', serif;
   color: rgb(183, 183, 183);
 }
 .head-ul{
@@ -162,4 +162,50 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 25px;
   margin: 5px;
   padding: 5px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .head-ctn{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    height: 300px;
+  }
+  .title{
+    font-size: 50px;
+    margin-left: 10%;
+  }
+  .logo-div{
+   width: 100%;
+  }
+  .logo{
+    width: 100px;
+    height: 100px;
+   margin-top: 25%;
+   margin-left: 33%;
+  }
+  .login-reg{
+    margin-right: 15%;
+  }
+
+  /* Footer */
+  .footer-ctn {
+    height: 150px;
+    margin-top: 100px;
+  }
+  .row{
+    margin-top: 5%;
+    width: 60%;
+  }
+  .col-div{
+    width: 35%;
+  }
+  .col-title{
+    display: none;
+  }
+  .icon-ctn{
+    margin-top: 5%;
+    width: 28%;
+  }
 }

@@ -9,3 +9,10 @@
   line-height: 30px;
   padding: 15px;
 }
+.edit-profile-img{
+  margin-top: 15px;
+}
+
+.edit-profile-img, .edit-profile-email{
+  width: 92%;
+}

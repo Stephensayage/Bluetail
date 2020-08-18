@@ -66,7 +66,7 @@ export default function EditProfile(props) {
               name="email"
               value={getUser.email}
               onChange={handleChange}
-            />
+            /> <br />
             <input
               className="edit-profile-img"
               name="imgUrl"
@@ -84,7 +84,7 @@ export default function EditProfile(props) {
               type="text"
               className="edit-user-bio"
               value={getUser.bio}
-            />
+            /><br />
             <button className="button">Submit</button>
           </div>
         </div>

@@ -9,8 +9,10 @@ export default function UserProfile(props) {
   const [getUser, setGetUser] = useState([])
   const [listings, setListings] = useState([])
 
+
   useEffect(() => {
     findUser()
+
   }, [])
 
   const findUser = async () => {
@@ -19,6 +21,7 @@ export default function UserProfile(props) {
     setListings(oneUser.listings)
   }
 
+
   const handleClick = async (id) => {
     await deleteListing(id)
     props.setAllListings(props.allListings.filter(list => {
@@ -26,6 +29,7 @@ export default function UserProfile(props) {
     }))
     window.location.reload()
   }
+
 
   return (
     <div className="profile-ctn">

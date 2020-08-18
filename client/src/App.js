@@ -10,6 +10,7 @@ import Main from './Main/Main';
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
 
+
   useEffect(() => {
     handleVerify()
   }, [])
