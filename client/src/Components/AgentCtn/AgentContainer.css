@@ -5,6 +5,8 @@
   display: flex;
   flex-flow: column nowrap;
   height: auto;
+  box-shadow: 5px 5px 5px 5px rgb(117, 131, 159);
+  background-color: white;
  }
  .agent-title{
    padding: 15px 0 15px 0;
@@ -21,8 +23,8 @@
    margin-bottom: 15px;
  }
  .agent-img-listing{
-   width: 80px;
-   height: 80px;
+   width: 100px;
+   height: 100px;
    margin: 5% 0 0 10%;
    border-radius: 10%;
  }
@@ -30,6 +32,7 @@
    width: 100%;
    font-size: 12px;
    padding: 15px;
+   margin-top: 6%;
    font-family: 'Open Sans', sans-serif;
  }
 

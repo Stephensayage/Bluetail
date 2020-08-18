@@ -17,16 +17,25 @@
   border-radius: 2px;
   color: white;
 }
+.bottom-ctn{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
 .listing-ctn{
-  width: 70%;
+  width: 25%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
   box-shadow: 3px 3px 3px 3px rgb(117, 131, 159);
   padding: 15px;
   margin: 55px 15px 55px 15px;
   background-color: rgb(255, 255, 255);
-  border: 5px solid rgba(33, 53, 93, 0.8);
+  
+}
+.show-info{
+  text-align: center;
 }
 .home-list-img{
   width: 300px;
@@ -54,4 +63,8 @@
   font-weight: 800;
   margin: 15px;
   padding: 15px;
+}
+
+.content-ctn{
+
 }
