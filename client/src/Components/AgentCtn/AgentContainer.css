@@ -23,10 +23,10 @@
    margin-bottom: 15px;
  }
  .agent-img-listing{
-   width: 100px;
-   height: 100px;
+   width: 90px;
+   height: 90px;
    margin: 5% 0 0 10%;
-   border-radius: 10%;
+   border-radius: 50%;
  }
  .agent-name, .agent-email{
    width: 100%;

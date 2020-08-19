@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import PopUp from '../../Components/Modal/PopUp'
 import { readOneUser } from '../../Services/users'
 import { Link } from "react-router-dom"
 import './UserProfile.css'
@@ -8,6 +9,7 @@ import { deleteListing } from '../../Services/listings'
 export default function UserProfile(props) {
   const [getUser, setGetUser] = useState([])
   const [listings, setListings] = useState([])
+
 
 
   useEffect(() => {
@@ -27,9 +29,9 @@ export default function UserProfile(props) {
     props.setAllListings(props.allListings.filter(list => {
       return list.id !== id
     }))
+
     window.location.reload()
   }
-
 
   return (
     <div className="profile-ctn">
@@ -62,8 +64,9 @@ export default function UserProfile(props) {
               <span className="profile-list-price">${listing.price}</span><span className="profile-list-sqft">{listing.square_footage} sqft</span>
               <div className="listing-buttons">
                 <Link to={`/listings/${listing.id}`}><button className="view-listing-btn button">View Listing</button></Link>
-                <Link to={`/listings/${listing.id}/edit`}><button className="view-list-btn button">Edit Listing</button>
-                </Link><button onClick={() => handleClick(listing.id)} className="remove-listing button">X</button>
+                <Link to={`/listings/${listing.id}/edit`}><button className="view-list-btn button">Edit Listing</button></Link>
+                <PopUp handleClick={handleClick} listing={listing} />
+
               </div>
             </div>
           ))}
@@ -72,3 +75,4 @@ export default function UserProfile(props) {
     </div>
   )
 }
+

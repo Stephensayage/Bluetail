@@ -11,17 +11,17 @@ export default function Footer() {
         <div className="row">
           <div className="col-div">
             <ul className='list-unstyled'>
-              <Link><li className='text-dark foot-li'>ABOUT</li></Link>
-              <Link><li className='text-dark foot-li'>CONTACT</li></Link>
-              <Link><li className='text-dark foot-li'>HELP</li></Link>
+              <Link><li className='foot-li'>ABOUT</li></Link>
+              <Link><li className='foot-li'>CONTACT</li></Link>
+              <Link><li className='foot-li'>HELP</li></Link>
             </ul>
           </div>
 
           <div className="col-div">
             <ul className='list-unstyled'>
-              <Link><li className='text-dark foot-li'>JOBS</li></Link>
-              <Link><li className='text-dark foot-li'>AGENT REFERRALS</li></Link>
-              <Link><li className='text-dark foot-li'>BLOG</li></Link>
+              <Link><li className='foot-li'>JOBS</li></Link>
+              <Link><li className='foot-li'>AGENT REFERRALS</li></Link>
+              <Link><li className='foot-li'>BLOG</li></Link>
             </ul>
           </div>
 
