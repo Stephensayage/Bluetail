@@ -27,7 +27,7 @@ font-weight: 800;
   flex-flow: column wrap;
   align-items: center;
   padding: 15px;
-  border: 15px solid lightblue;
+  border: 15px solid rgba(24, 47, 84, 0.9);
   box-shadow: 1px 1px 2px 2px  lightgray;
   width: 30%;
   margin: 50px auto 150px auto;

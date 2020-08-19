@@ -83,7 +83,7 @@ height: var(--heading-height);
   border: 1px solid #DADADA;
   background: #F3F3F3;
   padding:5px;
-  margin-left: 120px;
+  margin-right: 30px;
   font-weight: bold;
   font-size: 9pt;
 }
